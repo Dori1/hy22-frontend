@@ -1,7 +1,7 @@
 .card {
     position: relative;
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 120px;
     border-radius: 20px;
     padding: 20px;
     z-index: 1;
@@ -24,5 +24,30 @@
         max-width:100%;
         max-height:100px;
     }
+
+    .progressBar {
+        
+    }
+    progress {
+        width: 300px;
+        height: 5px;
+        background: red;
+    }
+    progress::-webkit-progress-bar {
+        width: 300px;
+        height: 5px;
+        background: rgb(154, 154, 154);
+    }
+    progress::-webkit-progress-value {
+        width: 300px;
+        height: 5px;
+        background: red;
+    } 
+    progress::-moz-progress-bar {
+        width: 300px;
+        height: 5px;
+        background: red;
+    }
+    
 }
 
