@@ -7,6 +7,7 @@ const ignoredFiles = require('react-dev-utils/ignoredFiles');
 const redirectServedPath = require('react-dev-utils/redirectServedPathMiddleware');
 const paths = require('./paths');
 const getHttpsConfig = require('./getHttpsConfig');
+const apiMocker = require('connect-api-mocker');
 
 const host = process.env.HOST || '0.0.0.0';
 const sockHost = process.env.WDS_SOCKET_HOST;
@@ -113,8 +114,9 @@ module.exports = function (proxy, allowedHost) {
       }
     },
     onAfterSetupMiddleware(devServer) {
-      // Redirect to `PUBLIC_URL` or `homepage` from `package.json` if url not match
+      // Redirect to `PUBLIC_URL` or `homepage` from `package.json` if url snot match
       devServer.app.use(redirectServedPath(paths.publicUrlOrPath));
+      devServer.app.use('/api', apiMocker('server/api'));
 
       // This service worker file is effectively a 'no-op' that will reset any
       // previous service worker registered for the same host:port combination.
