@@ -27,7 +27,6 @@
       "react-app"
     ],
     "rules": {
-      "additional-rule": "warn",
       "indent": ["error", "tab"]
     }
   },
