@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './HouseHold.module.scss';
 import { Sidebar } from '../sidebar/Sidebar';
+import { Card } from '../component/card/Card';
 
 export function HouseHold() {
 
@@ -10,7 +11,7 @@ export function HouseHold() {
 				<Sidebar></Sidebar>
 			</div>
 			<div className={styles.mainContainer}>
-				household
+				<Card></Card>
 			</div>
 		</div>)
 }

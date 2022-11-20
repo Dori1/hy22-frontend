@@ -1,27 +1,122 @@
 .card {
   position: relative;
-  width: 200px;
-  height: 100px;
+  width: 350px;
+  height: 120px;
   border-radius: 20px;
   padding: 20px;
   z-index: 1;
 
+  .title {
+    margin:0!important;
+  }
+
   .cardBackgorund {
-    background-color: white;
-    position: absolute;
-    opacity: 50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
+      background-color: white;
+      position: absolute;
+      opacity: 50%;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
   }
 
   img {
-    max-width:100%;
-    max-height:100px;
+      max-width:100%;
+      max-height:100px;
   }
+
+  .progressBarGreen {
+      width: 350px;
+      height: 5px;
+      background: rgb(7, 218, 7);
+  }
+  .progressBarGreen::-webkit-progress-bar {
+      width: 350px;
+      height: 5px;
+      background: rgb(154, 154, 154);
+  }
+  .progressBarGreen::-webkit-progress-value {
+      width: 350px;
+      height: 5px;
+      background: rgb(7, 218, 7);
+  } 
+  .progressBarGreen::-moz-progress-bar {
+      width: 350px;
+      height: 5px;
+      background: rgb(7, 218, 7);
+  }
+
+  .progressBarYellow {
+      width: 350px;
+      height: 5px;
+      background: rgb(246, 195, 29);
+  }
+  .progressBarYellow::-webkit-progress-bar {
+      width: 350px;
+      height: 5px;
+      background: rgb(154, 154, 154);
+  }
+  .progressBarYellow::-webkit-progress-value {
+      width: 350px;
+      height: 5px;
+      background: rgb(246, 195, 29);
+  } 
+  .progressBarYellow::-moz-progress-bar {
+      width: 350px;
+      height: 5px;
+      background: rgb(246, 195, 29);
+  }
+
+  .progressBarRed {
+    width: 350px;
+    height: 5px;
+    background: red;
+  }
+  .progressBarRed::-webkit-progress-bar {
+    width: 350px;
+    height: 5px;
+    background: rgb(154, 154, 154);
+  }
+  .progressBarRed::-webkit-progress-value {
+    width: 350px;
+    height: 5px;
+    background: red;
+  } 
+  .progressBarRed::-moz-progress-bar {
+    width: 350px;
+    height: 5px;
+    background: red;
+  }
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  max-height: 80px;
+}
+
+.flexContainer2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.infoSection {
+  padding-left: 20px;
+}
+
+.timeOfPurchase {
+
+}
+
+.compostable {
+  width: 25px;
+}
+
+.compostableImage {
+  margin-left: 10px;
+  cursor: pointer;
 }
