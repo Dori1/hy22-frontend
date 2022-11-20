@@ -3,15 +3,11 @@ import styles from './Card.module.scss';
 import { useCallback } from 'react';
 
 export function Card(props) {
-	// const {
-	// timeOfPurchase, 
-	// timeOfExpiration,
-	// productName
-	// } = props;
-
-	const timeOfPurchase = '2022-11-16T19:07:04.752422+01:00';
-	const timeOfExpiration = '2022-11-26T19:07:04.752422+01:00';
-	const productName = 'Strawberry';
+	const {
+	timeOfPurchase, 
+	timeOfExpiration,
+	productName
+	} = props;
 
 	const compostable = true;
 

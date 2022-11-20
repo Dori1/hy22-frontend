@@ -17,7 +17,7 @@ const reducer = createReducer(initialState, (builder) => {
 		.addCase(
 			getFoods.fulfilled,
 			(state, action) => {
-				state.foods = action.payload;
+				state.foods = action.payload.data;
 			})
 		.addDefaultCase((state) => state)
 });

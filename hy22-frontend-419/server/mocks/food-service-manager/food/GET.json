@@ -9,14 +9,14 @@
   {
     "id": "2",
     "productName": "Kenyer",
-    "insertDate": "2022-11-26T19:07:04.752422+01:00",
+    "insertDate": "2022-11-12T19:07:04.752422+01:00",
     "expirationDate": "2022-11-30T19:07:04.752422+01:00",
     "userId": "1"
   },
   {
     "id": "3",
     "productName": "HerzSzalami",
-    "insertDate": "2022-11-26T19:07:04.752422+01:00",
+    "insertDate": "2022-10-26T19:07:04.752422+01:00",
     "expirationDate": "2022-11-30T19:07:04.752422+01:00",
     "userId": "1"
   }
