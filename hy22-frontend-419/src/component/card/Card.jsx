@@ -4,9 +4,9 @@ import { useCallback } from 'react';
 
 export function Card(props) {
 	const {
-	timeOfPurchase, 
-	timeOfExpiration,
-	productName
+		timeOfPurchase, 
+		timeOfExpiration,
+		productName
 	} = props;
 
 	const compostable = true;
