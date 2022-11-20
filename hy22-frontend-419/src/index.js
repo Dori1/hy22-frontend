@@ -5,6 +5,10 @@ import App from './App';
 import { store } from './store/Store';
 import { Provider } from 'react-redux';
 
+window.appConfig = {
+	foodServiceManager: "http://localhost:3000/api"
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<Provider store={store}>
